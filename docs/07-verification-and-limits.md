@@ -33,6 +33,7 @@ The same handoff says that all 18 live skills had been returned by Plugin Creato
 - The VPS handoff and development plan were not directly read during this repository task.
 - The ChatGPT plugin page and its rendered list of skills were not checked in the host UI.
 - Actual main and specialist @ invocations were not run in ChatGPT.
+- The ZIP variant with an extra root `LICENSE` file was not tested in ChatGPT's plugin importer; the separate exact ZIP still contains the 173 original package files.
 - No independent next-agent comparison measured whether the skills improve work quality.
 - The current archive's test suite was not executed as part of repository preparation.
 - The user-provided public GitHub repository was accessible. Its initial main branch contained a placeholder README and a malformed MIT license file; this repository work replaces those and publishes the prepared project files. The final remote inventory and selected files are checked after publication.
@@ -80,6 +81,7 @@ Dieselbe Übergabe berichtet, dass Plugin Creator in einer früheren Sitzung all
 - VPS-Übergabe und Entwicklungsplan wurden für diese Repository-Arbeit nicht direkt gelesen.
 - Die ChatGPT-Plugin-Seite und ihre dargestellte Skillliste wurden nicht in der Hostoberfläche geprüft.
 - Hauptaufruf und Fachaufrufe mit @ wurden nicht tatsächlich in ChatGPT ausgeführt.
+- Das ZIP mit zusätzlicher `LICENSE`-Datei im Stamm wurde nicht im ChatGPT-Pluginimporter getestet; das separate exakte ZIP enthält weiterhin dieselben 173 Originaldateien des Pakets.
 - Ein unabhängiger Vergleich mit Folgeagenten hat nicht gemessen, ob die Skills die Arbeitsqualität verbessern.
 - Die Testsuite des aktuellen Archivs wurde während der Vorbereitung dieses Repositorys nicht ausgeführt.
 - Das vom Nutzer bereitgestellte öffentliche GitHub-Repository war erreichbar. Sein ursprünglicher main-Branch enthielt einen Platzhalter-README und eine fehlerhafte MIT-Lizenzdatei; diese Repository-Arbeit ersetzt beide und veröffentlicht die vorbereiteten Projektdateien. Die abschließende Remote-Dateiliste und ausgewählte Dateien werden nach der Veröffentlichung geprüft.

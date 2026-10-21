@@ -7,7 +7,7 @@
 - `agent-skills/` contains all 18 complete, separately readable skill files in a folder-based Agent Skills layout, with the shared reference library required by their relative links.
 - `downloads/Space-Kitzler-Kontextschmiede-Agent-Skills-0.10.0.zip` contains that complete portable skills tree and a copy of the MIT license.
 - `plugin/skills/` keeps the exact skill files from the live plugin archive.
-- `downloads/Space-Kitzler-Kontextschmiede-0.10.0.tar.gz` is the untouched archive returned for the live plugin release. `downloads/Space-Kitzler-Kontextschmiede-ChatGPT-Plugin-0.10.0.zip` contains the same 173 package files in ZIP form. The [upload-ready MIT ZIP](../downloads/Space-Kitzler-Kontextschmiede-ChatGPT-Plugin-MIT-0.10.0.zip) adds the license notice without altering those package files.
+- `downloads/Space-Kitzler-Kontextschmiede-0.10.0.tar.gz` is the untouched archive returned for the live plugin release. `downloads/Space-Kitzler-Kontextschmiede-ChatGPT-Plugin-0.10.0.zip` contains the same 173 package files in ZIP form. The [MIT redistribution ZIP](../downloads/Space-Kitzler-Kontextschmiede-ChatGPT-Plugin-MIT-0.10.0.zip) adds the license notice without altering those package files. Importing this extra-file variant into ChatGPT was not tested.
 
 ### Portability boundary
 
@@ -28,7 +28,7 @@ The skill bodies remain in German to preserve the live plugin wording. Repositor
 - `agent-skills/` enthält alle 18 vollständigen, einzeln lesbaren Skill-Dateien in einer ordnerbasierten Agent-Skills-Struktur samt gemeinsamer Referenzbibliothek für ihre relativen Verweise.
 - `downloads/Space-Kitzler-Kontextschmiede-Agent-Skills-0.10.0.zip` enthält diesen vollständigen portablen Skill-Baum und eine Kopie der MIT-Lizenz.
 - `plugin/skills/` bewahrt die exakten Skill-Dateien aus dem Live-Pluginarchiv.
-- `downloads/Space-Kitzler-Kontextschmiede-0.10.0.tar.gz` ist das unveränderte Archiv des Live-Plugin-Releases. `downloads/Space-Kitzler-Kontextschmiede-ChatGPT-Plugin-0.10.0.zip` enthält dieselben 173 Paketdateien im ZIP-Format. Das [MIT-ZIP zum Hochladen](../downloads/Space-Kitzler-Kontextschmiede-ChatGPT-Plugin-MIT-0.10.0.zip) ergänzt die Lizenz, ohne die Paketdateien zu verändern.
+- `downloads/Space-Kitzler-Kontextschmiede-0.10.0.tar.gz` ist das unveränderte Archiv des Live-Plugin-Releases. `downloads/Space-Kitzler-Kontextschmiede-ChatGPT-Plugin-0.10.0.zip` enthält dieselben 173 Paketdateien im ZIP-Format. Das [MIT-ZIP zur Weitergabe](../downloads/Space-Kitzler-Kontextschmiede-ChatGPT-Plugin-MIT-0.10.0.zip) ergänzt die Lizenz, ohne die Paketdateien zu verändern. Der Import dieser Variante in ChatGPT wurde nicht getestet.
 
 ### Grenze der Übertragbarkeit
 
