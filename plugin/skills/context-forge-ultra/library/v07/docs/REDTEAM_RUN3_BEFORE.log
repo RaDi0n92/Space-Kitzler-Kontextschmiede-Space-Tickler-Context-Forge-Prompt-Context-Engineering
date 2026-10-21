@@ -1,0 +1,160 @@
+======================================================================
+FAIL: test_33_ideas_exposed_via_active_skill (test_redteam_round3.RedTeamRound3.test_33_ideas_exposed_via_active_skill)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 51, in test_33_ideas_exposed_via_active_skill
+    self.assertTrue(p.is_file())
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_access_status_list (test_redteam_round3.RedTeamRound3.test_access_status_list)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 14, in assert_denied_without_crash
+    issues,warnings=aud.audit(d)
+                    ~~~~~~~~~^^^
+  File "/mnt/data/cfu-development/skills/forge-audit/scripts/audit_handoff.py", line 78, in audit
+    if "accessible_to_next" in source and source["accessible_to_next"] not in VALID_ACCESS:
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 25, in test_access_status_list
+    self.assert_denied_without_crash('Zugänglichkeit',lambda d:d['sources'][0].update(accessible_to_next=['ja']))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 16, in assert_denied_without_crash
+    self.fail(f'{field} verursachte Absturz statt sicheren Prüfbericht: {exc}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Zugänglichkeit verursachte Absturz statt sicheren Prüfbericht: unhashable type: 'list'
+
+======================================================================
+FAIL: test_claim_status_list (test_redteam_round3.RedTeamRound3.test_claim_status_list)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 14, in assert_denied_without_crash
+    issues,warnings=aud.audit(d)
+                    ~~~~~~~~~^^^
+  File "/mnt/data/cfu-development/skills/forge-audit/scripts/audit_handoff.py", line 165, in audit
+    if status not in VALID_CLAIM:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 23, in test_claim_status_list
+    self.assert_denied_without_crash('Behauptungsstatus',lambda d:d['claims'][0].update(status=['belegt']))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 16, in assert_denied_without_crash
+    self.fail(f'{field} verursachte Absturz statt sicheren Prüfbericht: {exc}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Behauptungsstatus verursachte Absturz statt sicheren Prüfbericht: unhashable type: 'list'
+
+======================================================================
+FAIL: test_decision_status_list (test_redteam_round3.RedTeamRound3.test_decision_status_list)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 14, in assert_denied_without_crash
+    issues,warnings=aud.audit(d)
+                    ~~~~~~~~~^^^
+  File "/mnt/data/cfu-development/skills/forge-audit/scripts/audit_handoff.py", line 94, in audit
+    if status not in VALID_DECISION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 21, in test_decision_status_list
+    self.assert_denied_without_crash('Entscheidungsstatus',lambda d:d['decisions'][0].update(status=['ersetzt']))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 16, in assert_denied_without_crash
+    self.fail(f'{field} verursachte Absturz statt sicheren Prüfbericht: {exc}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Entscheidungsstatus verursachte Absturz statt sicheren Prüfbericht: unhashable type: 'list'
+
+======================================================================
+FAIL: test_handoff_and_perspective_ref_paths_exist (test_redteam_round3.RedTeamRound3.test_handoff_and_perspective_ref_paths_exist)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 43, in test_handoff_and_perspective_ref_paths_exist
+    self.assertTrue((p.parent/ref).is_file(),f'missing {p.parent/ref}')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : missing /mnt/data/cfu-development/skills/forge-perspectives/references/denkbruecken.md
+
+======================================================================
+FAIL: test_read_again_access_list (test_redteam_round3.RedTeamRound3.test_read_again_access_list)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 14, in assert_denied_without_crash
+    issues,warnings=aud.audit(d)
+                    ~~~~~~~~~^^^
+  File "/mnt/data/cfu-development/skills/forge-audit/scripts/audit_handoff.py", line 148, in audit
+    if status is not None and status not in VALID_ACCESS:
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 27, in test_read_again_access_list
+    self.assert_denied_without_crash('Wiederlese-Zugang',lambda d:d['read_again'][0].update(accessible_to_next=['ja']))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 16, in assert_denied_without_crash
+    self.fail(f'{field} verursachte Absturz statt sicheren Prüfbericht: {exc}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Wiederlese-Zugang verursachte Absturz statt sicheren Prüfbericht: unhashable type: 'list'
+
+======================================================================
+FAIL: test_reversed_invalid_status (test_redteam_round3.RedTeamRound3.test_reversed_invalid_status)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 14, in assert_denied_without_crash
+    issues,warnings=aud.audit(d)
+                    ~~~~~~~~~^^^
+  File "/mnt/data/cfu-development/skills/forge-audit/scripts/audit_handoff.py", line 94, in audit
+    if status not in VALID_DECISION:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'dict'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 29, in test_reversed_invalid_status
+    self.assert_denied_without_crash('unsicheres Statusfeld',lambda d:d['decisions'][0].update(status={'hack':'ersetzt'}))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 16, in assert_denied_without_crash
+    self.fail(f'{field} verursachte Absturz statt sicheren Prüfbericht: {exc}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: unsicheres Statusfeld verursachte Absturz statt sicheren Prüfbericht: unhashable type: 'dict'
+
+======================================================================
+FAIL: test_source_read_status_list (test_redteam_round3.RedTeamRound3.test_source_read_status_list)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 14, in assert_denied_without_crash
+    issues,warnings=aud.audit(d)
+                    ~~~~~~~~~^^^
+  File "/mnt/data/cfu-development/skills/forge-audit/scripts/audit_handoff.py", line 63, in audit
+    if status not in VALID_READ:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 19, in test_source_read_status_list
+    self.assert_denied_without_crash('Quellstatus',lambda d:d['sources'][0].update(read_status=['gelesen_voll']))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/cfu-development/tests/test_redteam_round3.py", line 16, in assert_denied_without_crash
+    self.fail(f'{field} verursachte Absturz statt sicheren Prüfbericht: {exc}')
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Quellstatus verursachte Absturz statt sicheren Prüfbericht: unhashable type: 'list'
+
+----------------------------------------------------------------------
+Ran 53 tests in 5.013s
+
+FAILED (failures=8)

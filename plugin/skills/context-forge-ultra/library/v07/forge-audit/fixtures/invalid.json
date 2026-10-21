@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {"id":"S1","locator":"nichtvorhanden.md","read_status":"nicht_zugänglich","actually_read":true}
+  ],
+  "decisions": [
+    {"id":"D1","statement":"Alter Ansatz","status":"ersetzt","source_ids":["S2"]}
+  ],
+  "read_again": []
+}

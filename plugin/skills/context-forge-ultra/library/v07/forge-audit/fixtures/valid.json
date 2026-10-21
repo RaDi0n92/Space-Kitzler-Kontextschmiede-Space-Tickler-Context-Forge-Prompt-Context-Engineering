@@ -1,0 +1,42 @@
+{
+  "sources": [
+    {
+      "id": "S1",
+      "locator": "gespraech:nachricht-12",
+      "read_status": "gelesen_voll",
+      "actually_read": true,
+      "read_evidence": "vollständiger Chattext in dieser Sitzung"
+    },
+    {
+      "id": "S2",
+      "locator": "projekt/entwurf.md",
+      "read_status": "nur_erwähnt",
+      "actually_read": false
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "statement": "Generischer Plugin-Generator",
+      "status": "ersetzt",
+      "superseded_by": "D2",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "id": "D2",
+      "statement": "Context-to-Handoff",
+      "status": "aktuell",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "read_again": [
+    {
+      "source_id": "S2",
+      "why": "Originalentwurf vor der Implementierung erneut prüfen"
+    }
+  ]
+}

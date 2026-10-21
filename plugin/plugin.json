@@ -1,0 +1,27 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "context-forge-ultra",
+  "version": "0.10.0",
+  "description": "Ein zentraler Einstieg, um zugängliche Gespräche und Dokumente quellentreu zu verstehen, ihren Verlauf nachzuvollziehen, neue Zusammenhänge zu entdecken und daraus einen direkt nutzbaren Arbeitsauftrag, eine Kontextübergabe oder ausdrücklich beauftragte Arbeit zu machen.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Space-Kitzler-Kontextschmiede",
+        "shortDescription": "Kontext verstehen und weitergeben",
+        "longDescription": "Eine Werkstatt für quellentreues Kontextverstehen: Sie erschließt zugängliche Gespräche und Dokumente, bewahrt Verlauf und Entscheidungen, verbindet unterschiedliche Sichtweisen und erstellt daraus einen nutzbaren Arbeitsauftrag, eine Kontextübergabe oder setzt bei ausdrücklichem Auftrag Arbeit mit verfügbaren Werkzeugen um. Sie behauptet weder Zugriff auf verborgene Modellprozesse noch eine nicht vorhandene Laufzeit.",
+        "developerName": "Daniel",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": [
+          "Space-Kitzler-Kontextschmiede · Übergabe: Erschließe unseren verfügbaren Projektkontext und erstelle eine eigenständig verständliche, offene Kontextübergabe. Zeige, welche Quellen du gelesen hast und welche Originale der nächste Agent selbst lesen sollte.",
+          "Space-Kitzler-Kontextschmiede · Denkraum: Entwickle aus diesem Material unterschiedliche, miteinander verbindbare Sichtweisen, ohne den Folgeagenten auf eine Denkschablone festzulegen.",
+          "Prüfe diese Kontextübergabe auf Quellenabdeckung, verworfene Entscheidungen, offene Denkangebote und unbelegte Behauptungen."
+        ]
+      }
+    }
+  },
+  "author": {
+    "name": "Daniel",
+    "email": "dakthinkpad@web.de"
+  }
+}

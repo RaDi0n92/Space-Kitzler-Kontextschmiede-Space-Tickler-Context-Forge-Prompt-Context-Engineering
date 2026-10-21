@@ -1,0 +1,24 @@
+{
+  "interface": {
+    "displayName": "Space-Kitzler-Kontextschmiede",
+    "shortDescription": "Kontext verstehen und weitergeben",
+    "longDescription": "Eine Werkstatt f\u00fcr quellentreues Kontextverstehen: Sie erschlie\u00dft zug\u00e4ngliche Gespr\u00e4che und Dokumente, bewahrt Verlauf und Entscheidungen, verbindet unterschiedliche Sichtweisen und erstellt daraus einen nutzbaren Arbeitsauftrag, eine Kontext\u00fcbergabe oder setzt bei ausdr\u00fccklichem Auftrag Arbeit mit verf\u00fcgbaren Werkzeugen um. Sie behauptet weder Zugriff auf verborgene Modellprozesse noch eine nicht vorhandene Laufzeit.",
+    "developerName": "Daniel",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Space-Kitzler-Kontextschmiede \u00b7 \u00dcbergabe: Erschlie\u00dfe unseren verf\u00fcgbaren Projektkontext und erstelle eine eigenst\u00e4ndig verst\u00e4ndliche, offene Kontext\u00fcbergabe. Zeige, welche Quellen du gelesen hast und welche Originale der n\u00e4chste Agent selbst lesen sollte.",
+      "Space-Kitzler-Kontextschmiede \u00b7 Denkraum: Entwickle aus diesem Material unterschiedliche, miteinander verbindbare Sichtweisen, ohne den Folgeagenten auf eine Denkschablone festzulegen.",
+      "Pr\u00fcfe diese Kontext\u00fcbergabe auf Quellenabdeckung, verworfene Entscheidungen, offene Denkangebote und unbelegte Behauptungen."
+    ]
+  },
+  "name": "context-forge-ultra",
+  "version": "0.10.0",
+  "description": "Ein zentraler Einstieg, um zug\u00e4ngliche Gespr\u00e4che und Dokumente quellentreu zu verstehen, ihren Verlauf nachzuvollziehen, neue Zusammenh\u00e4nge zu entdecken und daraus einen direkt nutzbaren Arbeitsauftrag, eine Kontext\u00fcbergabe oder ausdr\u00fccklich beauftragte Arbeit zu machen.",
+  "author": {
+    "name": "Daniel",
+    "email": "dakthinkpad@web.de"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

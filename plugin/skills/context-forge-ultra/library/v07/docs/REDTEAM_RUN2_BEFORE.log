@@ -1,0 +1,67 @@
+======================================================================
+ERROR: test_malformed_claim_reference_must_not_crash (test_redteam_round2.RedTeamRound2.test_malformed_claim_reference_must_not_crash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round2.py", line 19, in test_malformed_claim_reference_must_not_crash
+    self.assertTrue(aud.audit(d)[0])
+                    ~~~~~~~~~^^^
+  File "/mnt/data/cfu-development/skills/forge-audit/scripts/audit_handoff.py", line 156, in audit
+    if cl.get("supported") is False or not isinstance(sids, list) or not sids or any(s not in by_id for s in sids):
+                                                                                 ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/cfu-development/skills/forge-audit/scripts/audit_handoff.py", line 156, in <genexpr>
+    if cl.get("supported") is False or not isinstance(sids, list) or not sids or any(s not in by_id for s in sids):
+                                                                                     ^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+======================================================================
+ERROR: test_malformed_edge_id_must_not_crash (test_redteam_round2.RedTeamRound2.test_malformed_edge_id_must_not_crash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round2.py", line 25, in test_malformed_edge_id_must_not_crash
+    self.assertTrue(aud.audit(d)[0])
+                    ~~~~~~~~~^^^
+  File "/mnt/data/cfu-development/skills/forge-audit/scripts/audit_handoff.py", line 187, in audit
+    if not isinstance(edge, dict) or edge.get("from") not in pids or edge.get("to") not in pids:
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+======================================================================
+ERROR: test_malformed_perspective_anchor_must_not_crash (test_redteam_round2.RedTeamRound2.test_malformed_perspective_anchor_must_not_crash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round2.py", line 22, in test_malformed_perspective_anchor_must_not_crash
+    self.assertTrue(aud.audit(d)[0])
+                    ~~~~~~~~~^^^
+  File "/mnt/data/cfu-development/skills/forge-audit/scripts/audit_handoff.py", line 174, in audit
+    if not isinstance(sid, list) or any(s not in by_id for s in sid):
+                                    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/cfu-development/skills/forge-audit/scripts/audit_handoff.py", line 174, in <genexpr>
+    if not isinstance(sid, list) or any(s not in by_id for s in sid):
+                                        ^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+======================================================================
+ERROR: test_malformed_re_read_id_must_not_crash (test_redteam_round2.RedTeamRound2.test_malformed_re_read_id_must_not_crash)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round2.py", line 16, in test_malformed_re_read_id_must_not_crash
+    self.assertTrue(aud.audit(d)[0])
+                    ~~~~~~~~~^^^
+  File "/mnt/data/cfu-development/skills/forge-audit/scripts/audit_handoff.py", line 136, in audit
+    if sid not in by_id:
+       ^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+
+======================================================================
+FAIL: test_bad_claim_status (test_redteam_round2.RedTeamRound2.test_bad_claim_status)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/cfu-development/tests/test_redteam_round2.py", line 31, in test_bad_claim_status
+    self.assertTrue(aud.audit(d)[0])
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true
+
+----------------------------------------------------------------------
+Ran 42 tests in 3.977s
+
+FAILED (failures=1, errors=4)

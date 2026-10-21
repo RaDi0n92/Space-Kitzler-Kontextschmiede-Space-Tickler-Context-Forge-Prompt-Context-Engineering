@@ -1,0 +1,19 @@
+{
+  "evidence": [
+    {
+      "id": "E1",
+      "path": "quelle.md",
+      "start_line": 2,
+      "end_line": 2,
+      "quote": "Eine gültige Entscheidung gilt erst nach der ausdrücklich dokumentierten Korrektur.",
+      "sha256": "057e07023fedda43d8acd942637a3379040235c1bea02d5caa95fd44576b1358"
+    },
+    {
+      "id": "E2",
+      "path": "quelle.md",
+      "start_line": 3,
+      "end_line": 3,
+      "quote": "Die vertagte Controller-Verbindung bleibt eine eigenständige Option."
+    }
+  ]
+}
